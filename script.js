@@ -44,6 +44,7 @@ function newQuote() {
 // Get Quotes from API
 async function getQuotes() {
     Loading();
+    const proxyUrl = 'https://warm-cliffs-48235.herokuapp.com/'
     const apiUrl = 'https://type.fit/api/quotes';
     try {
         const response = await fetch(apiUrl);
